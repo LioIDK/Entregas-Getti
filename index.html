@@ -2,36 +2,42 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Sistema de Inventario</title>
+    <title>Inventario</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-    <h1>Inventario</h1>
+    <h1>Sistema de Inventario</h1>
 
-    <div class="formulario">
-        <input type="text" id="nombre" placeholder="Nombre del producto">
+    <div>
+        <input type="text" id="nombre" placeholder="Nombre">
         <input type="number" id="precio" placeholder="Precio">
         <input type="number" id="stock" placeholder="Stock">
-        <button type="button" id="btnAgregar">Agregar Producto</button>
+        <button type="button" id="btnAgregar">Agregar</button>
     </div>
 
-    <h2>Lista de Productos</h2>
+    <h2>Productos</h2>
+
     <table>
         <thead>
             <tr>
                 <th>Nombre</th>
-                <th>Precio por unidad</th>
+                <th>Precio</th>
                 <th>Stock</th>
                 <th>Total</th>
                 <th>Acciones</th>
             </tr>
         </thead>
-        <tbody id="tablaProductos"></tbody>
+        <tbody id="tablaProductos">
+        </tbody>
     </table>
 
-    <h3>Valor total del inventario: $<span id="totalInventario">0</span></h3>
+<h3>Total inventario: $<span id="total">0</span></h3>
 
-    <script src="js/main.js"></script>
+    <h3>Total inventario: $<span id="total">0</span></h3>
+
+    <p id="mensaje"></p>
+
+    <script src="js/main.js" defer></script>
 </body>
 </html>
