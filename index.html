@@ -2,40 +2,42 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Inventario</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Gestión de Stock</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
 
-    <h1>Sistema de Inventario</h1>
+<div class="container">
+    <h1>Gestión de Stock</h1>
 
-    <div>
-        <input type="text" id="nombre" placeholder="Nombre">
-        <input type="number" id="precio" placeholder="Precio">
-        <input type="number" id="stock" placeholder="Stock">
-        <button type="button" id="btnAgregar">Agregar</button>
-    </div>
+    <h3>Agregar Producto</h3>
+    <input type="text" id="nombre" placeholder="Nombre">
+    <input type="number" id="precio" placeholder="Precio">
+    <input type="number" id="cantidad" placeholder="Cantidad">
 
-    <h2>Productos</h2>
+    <select id="categoria">
+    <option value="General">General</option>
+    <option value="Periféricos">Periféricos</option>
+    <option value="Hardware">Hardware</option>
+    </select>
 
-    <table>
-        <thead>
-            <tr>
-                <th>Nombre</th>
-                <th>Precio</th>
-                <th>Stock</th>
-                <th>Total</th>
-                <th>Acciones</th>
-            </tr>
-        </thead>
-        <tbody id="tablaProductos">
-        </tbody>
-    </table>
+    <button id="btnAgregar">Agregar</button>
+
+    <h3>Buscar</h3>
+    <input type="text" id="busqueda" placeholder="Buscar...">
 
     <h3>Total inventario: $<span id="total">0</span></h3>
 
-    <p id="mensaje"></p>
+    <h3>Productos</h3>
+    <div id="lista"></div>
 
-    <script src="js/main.js" defer></script>
+    <button id="resetBtn">Resetear inventario</button>
+</div>
+
+<script src="main.js"></script>
 </body>
+<footer>
+    <p>&copy; 2026 Gestión de Stock. Todos los derechos reservados.</p>
+</footer>
 </html>

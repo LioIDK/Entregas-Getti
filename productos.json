@@ -1,0 +1,5 @@
+    [
+    { "id": 1, "nombre": "Teclado", "precio": 20, "cantidad": 5, "categoria": "Periféricos" },
+    { "id": 2, "nombre": "Mouse", "precio": 10, "cantidad": 2, "categoria": "Periféricos" },
+    { "id": 3, "nombre": "Monitor", "precio": 150, "cantidad": 8, "categoria": "Hardware" }
+    ]
